@@ -34,7 +34,14 @@ class InfoFragment : androidx.fragment.app.Fragment() {
 
         val view = inflater.inflate(R.layout.fragment_info, container, false)
 
-        view.viewPager.adapter = MyPagerAdapter((activity as AppCompatActivity).supportFragmentManager)
+        val name0 = getString(R.string.event)
+        val name1 = getString(R.string.travel)
+        val name2 = getString(R.string.event)
+        val name3 = getString(R.string.settings)
+
+        val names : Array<String> = arrayOf(name0, name1, name2, name3)
+
+        view.viewPager.adapter = MyPagerAdapter((activity as AppCompatActivity).supportFragmentManager, names)
         val tabs = view.findViewById<TabLayout>(R.id.tabs)
         tabs.setupWithViewPager(view.viewPager)
 

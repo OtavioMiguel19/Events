@@ -5,7 +5,9 @@ import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentStatePagerAdapter
 import com.vidroid.com.br.apps.event.fragments.info.EventFragment
 
-class MyPagerAdapter(fm: FragmentManager) : FragmentStatePagerAdapter(fm) {
+class MyPagerAdapter(fm: FragmentManager, names : Array<String>) : FragmentStatePagerAdapter(fm) {
+
+    val names : Array<String> = names
 
     override fun getItem(position: Int): Fragment {
         return when (position) {
@@ -30,11 +32,11 @@ class MyPagerAdapter(fm: FragmentManager) : FragmentStatePagerAdapter(fm) {
 
     override fun getPageTitle(position: Int): CharSequence {
         return when (position) {
-            0 -> "Day 0"
-            1 -> "Day 1"
-            2 -> "Day 2"
+            0 -> names[0]
+            1 -> names[1]
+            2 -> names[2]
             else -> {
-                return "Day 3"
+                return names[3]
             }
         }
     }

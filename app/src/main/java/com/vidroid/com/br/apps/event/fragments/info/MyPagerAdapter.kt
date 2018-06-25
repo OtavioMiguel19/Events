@@ -1,10 +1,14 @@
 package com.vidroid.com.br.apps.event.fragments.info
 
+import androidx.core.content.res.TypedArrayUtils.getString
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentStatePagerAdapter
+import com.vidroid.com.br.apps.event.R
 
-class MyPagerAdapter(fm: FragmentManager) : FragmentStatePagerAdapter(fm) {
+class MyPagerAdapter(fm: FragmentManager, names: Array<String>) : FragmentStatePagerAdapter(fm) {
+
+    val names : Array<String> = names
 
     override fun getItem(position: Int): Fragment {
         return when (position) {
@@ -12,13 +16,13 @@ class MyPagerAdapter(fm: FragmentManager) : FragmentStatePagerAdapter(fm) {
                 EventFragment()
             }
             1 -> {
-                EventFragment()
+                TravelFragment()
             }
             2 -> {
-                EventFragment()
+                AboutFragment()
             }
             else -> {
-                return EventFragment()
+                return SettingsFragment()
             }
         }
     }
@@ -28,12 +32,13 @@ class MyPagerAdapter(fm: FragmentManager) : FragmentStatePagerAdapter(fm) {
     }
 
     override fun getPageTitle(position: Int): CharSequence {
+
         return when (position) {
-            0 -> "Event"
-            1 -> "Travel"
-            2 -> "About"
+            0 -> names[0]
+            1 -> names[1]
+            2 -> names[2]
             else -> {
-                return "Settings"
+                return names[3]
             }
         }
     }
