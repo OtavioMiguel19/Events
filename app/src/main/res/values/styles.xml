@@ -1,0 +1,30 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textAppearance">@style/FontGoogleSans</item>
+    </style>
+
+    <style name="FontGoogleSans">
+        <item name="fontFamily">@font/roboto</item>
+        <item name="android:fontFamily">@font/roboto</item>
+    </style>
+
+
+    <style name="AppTheme.FontGoogleSans" parent="AppTheme">
+        <item name="fontFamily">@font/roboto</item>
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:textViewStyle">@style/FontGoogleSans</item>
+        <item name="android:actionBarStyle">@style/FontGoogleSans</item>
+    </style>
+
+
+    <style name="TextNotAllCaps" parent="AppTheme">
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+</resources>
