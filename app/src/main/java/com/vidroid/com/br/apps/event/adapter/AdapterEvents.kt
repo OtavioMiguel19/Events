@@ -11,7 +11,7 @@ import com.vidroid.com.br.apps.event.R
 import com.vidroid.com.br.apps.event.model.Event
 import org.w3c.dom.Text
 
-class AdapterListaClientes(eventList:List<Event>): RecyclerView.Adapter<AdapterListaClientes.MyViewHolder>() {
+class AdapterEvents(eventList:List<Event>): RecyclerView.Adapter<AdapterEvents.MyViewHolder>() {
 
     override fun getItemCount(): Int {
         return this.eventsList.size

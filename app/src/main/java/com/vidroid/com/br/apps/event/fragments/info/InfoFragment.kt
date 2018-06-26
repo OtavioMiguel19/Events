@@ -36,7 +36,7 @@ class InfoFragment : androidx.fragment.app.Fragment() {
 
         val name0 = getString(R.string.event)
         val name1 = getString(R.string.travel)
-        val name2 = getString(R.string.event)
+        val name2 = getString(R.string.about)
         val name3 = getString(R.string.settings)
 
         val names : Array<String> = arrayOf(name0, name1, name2, name3)

@@ -12,31 +12,27 @@ class MyPagerAdapter(fm: FragmentManager, names : Array<String>) : FragmentState
     override fun getItem(position: Int): Fragment {
         return when (position) {
             0 -> {
-                EventFragment()
+                Day0Fragment()
             }
             1 -> {
-                EventFragment()
-            }
-            2 -> {
-                EventFragment()
+                Day1Fragment()
             }
             else -> {
-                return EventFragment()
+                return Day2Fragment()
             }
         }
     }
 
     override fun getCount(): Int {
-        return 4
+        return 3
     }
 
     override fun getPageTitle(position: Int): CharSequence {
         return when (position) {
             0 -> names[0]
             1 -> names[1]
-            2 -> names[2]
             else -> {
-                return names[3]
+                return names[2]
             }
         }
     }
