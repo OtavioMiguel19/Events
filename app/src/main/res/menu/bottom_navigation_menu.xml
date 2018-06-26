@@ -3,15 +3,15 @@
 
     <item
         android:id="@+id/bottomMenuInfo"
-        android:title="Info"
+        android:title="@string/info"
         android:icon="@drawable/ic_info_white_24dp"/>
     <item
         android:id="@+id/bottomMenuSchedule"
-        android:title="Schedule"
+        android:title="@string/schedule"
         android:icon="@drawable/ic_event_white_24dp"/>
     <item
         android:id="@+id/bottomMenuMap"
-        android:title="Map"
+        android:title="@string/map"
         android:icon="@drawable/ic_place_white_24dp"/>
 
 

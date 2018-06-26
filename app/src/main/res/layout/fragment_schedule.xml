@@ -22,7 +22,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="20sp"
                 android:textColor="@color/colorBlack"
-                android:text="Schedule"/>
+                android:text="@string/schedule"/>
         </androidx.appcompat.widget.Toolbar>
 
         <com.google.android.material.tabs.TabLayout
@@ -34,15 +34,15 @@
             <com.google.android.material.tabs.TabItem
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Day 0"/>
+                android:text="@string/day0"/>
             <com.google.android.material.tabs.TabItem
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Day 1"/>
+                android:text="@string/day1"/>
             <com.google.android.material.tabs.TabItem
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Day 2"/>
+                android:text="@string/day2"/>
         </com.google.android.material.tabs.TabLayout>
         <include layout="@layout/view_pager" />
     </LinearLayout>

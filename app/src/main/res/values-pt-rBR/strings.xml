@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Event</string>
+    <string name="hello_blank_fragment">Oi fragmento em branco</string>
+    <string name="title_activity_maps">Mapa</string>
+    <string name="event">Evento</string>
+    <string name="travel">Viagem</string>
+    <string name="about">Sobre</string>
+    <string name="settings">Config.</string>
+    <string name="day0">Dia 0</string>
+    <string name="day1">Dia 1</string>
+    <string name="day2">Dia 2</string>
+    <string name="day3">Dia 3</string>
+    <string name="info">Informações</string>
+    <string name="map">Mapa</string>
+    <string name="schedule">Programação</string>
+</resources>

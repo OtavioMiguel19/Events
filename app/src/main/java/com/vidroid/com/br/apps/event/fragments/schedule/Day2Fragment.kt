@@ -25,7 +25,7 @@ class Day2Fragment : androidx.fragment.app.Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
-        val view = inflater.inflate(R.layout.fragment_day1, container, false)
+        val view = inflater.inflate(R.layout.fragment_day2, container, false)
 
         val recyclerView = view.findViewById<RecyclerView>(R.id.recyclerView)
         val adapter = AdapterEvents(getEvents())

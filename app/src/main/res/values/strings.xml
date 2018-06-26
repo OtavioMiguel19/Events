@@ -12,4 +12,7 @@
     <string name="day1">Day 1</string>
     <string name="day2">Day 2</string>
     <string name="day3">Day 3</string>
+    <string name="info">Info</string>
+    <string name="map">Map</string>
+    <string name="schedule">Schedule</string>
 </resources>
